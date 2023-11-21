@@ -318,13 +318,14 @@ pip3 install jedi
 
 With this, you have an auto-completion set for Python checkout for your language.
 
-After writing these plugins. Exit the init.vim and open it again you will have to now run :PlugInstall again
+After writing these plugins. Exit the init.vim and open it again you will have to now *run :PlugInstall* again
 
 # Deleting unwanted plugins
 
-In the case you want to delete a plugin that was already added all you have to do is to remove the line handling the plugin in the "init.vim" file. Thereafter, you need to run :PlugClean.😎😎
+In the case you want to delete a plugin that was already added all you have to do is to remove the line handling the plugin in the "init.vim" file. Thereafter, you need to run *:PlugClean*.😎😎
 
 My name is Henry Fasakin and I am a devoted web developer and Product designer. You can follow me up using these links:
 
 https://twitter.com/henqsoft
-
+https://facebook.com/henry.fasakin.7
+https://www.linkedin.com/in/fasakin-henry/
