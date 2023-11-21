@@ -44,24 +44,30 @@ cd .config/
 
 - Make another directory called nvim in the .config directory.
 
+```
 mkdir nvim
+```
 
 - Enter the created directory.
 
+```
 cd nvim
-
+```
 - Create a new file called "init.vim". This is more like our configuration file.
 
+```
 nvim init.vim
-
+```
 # writing codes to configure each functionality
 
-It's going to be a long one but is it worth it?🥴🧐🤐🤨 Give me a benefit of doubt.
+It's going to be a long one but is it worth it?🥴🧐🤐🤨 Give me the benefit of the doubt.
 
 in the init.vim write the following codes:
 
+```
 :set number
 :set relativenumber
+```
 
 hit escape and write :wq to save the progress of the configuration.
 
@@ -69,8 +75,9 @@ retype "nvim init.vim" to see the changes. That's how we roll😎.
 
 Access this link to get all the init.vim for the whole process to make this easier.
 
+```
 https://github.com/fasakinhenry/Neovim-config/blob/master/init.vim
-
+```
 Just copy and paste the contents into your init.vim or you just follow through this article.
 
 Back to the conversation here. Add more codes to the "init.vim" file.
@@ -96,26 +103,21 @@ https://github.com/junegunn/vim-plug
 scroll down in the Readme of that repository to the Neovim section to copy the code there. it's too much stress? here is the code: (Warning first: second warning😂😂😂. Be careful when copying linux codes especially ones with sh and curl. But you can trust me innit?)
 
 ```
-
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
 ```
 In case you get an error curl is not installed, you can run the following code in your terminal:
 
 ```
 sudo apt install curl
-
 ```
 All these codes will be run inside the .config/nvim folder take note.
 
 To initiate the plugins add the following codes to your init.vim file.
 
 ```
-
 call plug#begin()
 call plug#end()
-
 ```
 
 All the codes for our plugin call would be between the codes above.Basically, the format for calling a plugin is generally to write:
@@ -128,17 +130,13 @@ plug 'link to the plugin page(github repository)'
 This plugin shows a nice status bar in your nvim IDE
 
 ```
-
 Plug 'https://github.com/vim-airline/vim-airline'
-
 ```
 
 Note: you will need git to run this plugin so you have to install git by running:
 
 ```
-
 sudo apt install git
-
 ```
 
 Go back to your init.vim file "nvim init.vim" and press 'Esc' and write :PlugInstall to install the vim plugin.
@@ -149,9 +147,7 @@ Note: You may see that there are some broken icons you will have to install some
 This plugin allows us to have a visible file tree like VSCODE file sidebar🙌.
 
 ```
-
 Plug 'https://github.com/preservim/nerdtree'
-
 ```
 
 Install it again by opening "init.vim" file and pressing 'ESC' and type :PlugInstall. Take note of this part. This is how you will be installing all the plugins.
@@ -161,20 +157,16 @@ Run this plugin by hitting 'Esc' and typing :NERDTreeFocus to see the effect.
 In the case that you see some broken symbols in the file tree on windows. you can type these following codes in your "init.vim" folder.
 
 ```
-
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
-
 ```
 
 I made this simpler also. Instead of having to write the command :NERDTreeFocus every time and so on. Just write these codes in your "init.vim" file
 
 ```
-
 nnoremap <C-f> : NERDTreeFocus<CR>
 nnoremap <C-n> : NERDTree<CR>
 nnoremap <C-t> : NERDTreeToggle<CR>
-
 ```
 
 With that setup, you can easily toggle the nerd tree(file tree GUI) with 'CTRL + t'.
@@ -182,9 +174,7 @@ With that setup, you can easily toggle the nerd tree(file tree GUI) with 'CTRL +
 - Commenting using gcc and gc
 
 ```
-
 Plug 'https://github.com/tpope/vim-commentary'
-
 ```
 
 - Surrounding ysw)
