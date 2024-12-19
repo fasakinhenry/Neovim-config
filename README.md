@@ -326,6 +326,6 @@ In the case you want to delete a plugin that was already added all you have to d
 
 My name is Henry Fasakin and I am a devoted web developer and Product designer. You can follow me up using these links:
 
-https://twitter.com/henqsoft
-https://facebook.com/henry.fasakin.7
-https://www.linkedin.com/in/fasakin-henry/
+[X profile](https://x.com/henqsoft)
+[Facebook](https://facebook.com/henry.fasakin.7)
+[Linkedin](https://www.linkedin.com/in/fasakin-henry/)
